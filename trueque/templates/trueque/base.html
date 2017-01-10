@@ -1,15 +1,17 @@
    {% load staticfiles %}
     <html>
         <head>
+	    <title>Web Trueque</title>
 	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	    <link rel="stylesheet" href="{% static 'css/trueque.css' %}">
 	    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">	
-            <title>Web Trueque</title>
+            
         </head>
         <body>
             <div class= "page-header">
-                <h1><a href="">Web trueque</a></h1>
+		<a href="{% url 'trueque.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+		<h1><a href="/">Web trueque</a></h1>
             </div>
      	    	
   	      <div class="content container">
