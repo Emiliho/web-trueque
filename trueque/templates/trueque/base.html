@@ -14,12 +14,18 @@
 			<a href="{% url 'post_new' %}" class="top-menu" >Añadir anuncio <span class="glyphicon glyphicon-plus"></span></a>
 			<p class="top-menu" >Bienvenido {{ user.username }}<small>(<a href="{% url 'logout' %}">Salir</a>)</small></p>
 		{% else %}
-			<a href="/accounts/register"class="top-menu">Registrarse</a>
+			<a href="/accounts/register"class="top-menu">Regístrate</a>
 			<a href="{% url 'login' %}" class="top-menu">Iniciar sesión</a>
 		{% endif %}
 		<h1><a href="/">Web trueque</a></h1>
             </div>
-     	    	
+     	    	    <nav>
+            <!-- Listado de Navegación -->
+            <ul class="menu">  
+                <li><a href="#">Anuncios</a></li>  
+                <li><a href="#">Ayuda</a></li>  
+            </ul>    
+    </nav>
   	      <div class="content container">
        		 <div class="row">
           	  <div class="col-md-8">

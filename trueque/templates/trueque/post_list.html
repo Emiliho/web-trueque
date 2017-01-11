@@ -8,6 +8,7 @@
                 </div>
                 <h1><a href="{% url 'trueque.views.post_detail' pk=post.pk %}">{{ post.titulo }}</a></h1>
                 <p>{{ post.texto|linebreaksbr }}</p>
+		<strong>Solicitante: {{ post.autor }} &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</strong>
 		<a href="{% url 'post_detail' pk=post.pk %}">Número de respuestas: {{ post.comments.count }}</a>
             </div>
         {% endfor %}
