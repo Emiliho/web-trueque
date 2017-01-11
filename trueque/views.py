@@ -87,3 +87,6 @@ def register(request):
 		form = UserCreationForm()
 	return render(request, 'registration/register.html',  {'form': form})
 
+def info(request):
+	return render(request, 'trueque/info.html')
+
