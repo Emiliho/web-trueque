@@ -17,12 +17,12 @@
 			<a href="/accounts/register"class="top-menu">Regístrate</a>
 			<a href="{% url 'login' %}" class="top-menu">Iniciar sesión</a>
 		{% endif %}
-		<h1><a href="/">Web trueque</a></h1>
+		<h1><a href="{% url 'post_new' %}">Web trueque</a></h1>
             </div>
      	    <div id="navegador">
 		<ul>
-			<li><a href="/">Anuncios</a></li>
-			<li><a href="/info.html">Información al usuario</a></li>
+			<li><a href="{% url 'post_list' %}">Anuncios</a></li>
+			<li><a href="{% url 'info' %}">Información al usuario</a></li>
 		</ul>
 	    </div> 
   	      <div class="content container">
